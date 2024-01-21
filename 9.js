@@ -43,3 +43,13 @@ user2.login()
 console.log(user2.isLogged)
 user2.logout()
 console.log(user2.isLogged)
+
+
+//typeof - to find the type of any variable or data
+//arrays are also objects
+console.log(typeof(user1))
+console.log(typeof([1,2,3]))
+//strings aren't objects but they have common thing
+console.log(typeof('asda'))
+//numbers
+console.log(typeof(44))
