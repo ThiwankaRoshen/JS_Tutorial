@@ -22,3 +22,24 @@ console.log(user1)
 //we can change user1 property values
 user1.age = 23
 console.log(user1)
+
+//methods : function that relate to an object
+var user2 = {
+    name: 'TRX',
+    isLogged: false,
+    //name of the method    //function declaration
+    login :                 function(){
+                                 //function body
+                                 this.isLogged = true
+                                 console.log('Logged')
+    },
+    logout : function(){
+        this.isLogged = false
+        console.log('Logged out')
+    }
+}
+console.log(user2.isLogged)
+user2.login()
+console.log(user2.isLogged)
+user2.logout()
+console.log(user2.isLogged)
