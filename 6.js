@@ -82,3 +82,9 @@ for (var i = 0; i<=9; i++){
         console.log(i + ' times ' + j + ' equals to ' + i*j)
     }
 }
+//try this below in your browser devtools console
+for (var i = 0; i<=9; i++){
+    for (var j = 0; j<=9; j++){
+        console.log('%c' + i + ' times ' + j + ' equals to ' + i*j, "border: 2px solid blue")
+    }
+}
