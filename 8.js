@@ -25,3 +25,23 @@ function displaylist (arr){
 }
 
 displaylist(shoppingitems)
+
+
+//remember string are arrays too.
+//but they are immutable meaning they can't be pop or push. so they don't change. arrays are mutable. they can change
+var fname = 'malisa'
+console.log(fname.length)
+
+console.log(fname.charAt(1))
+
+console.log(fname.concat(' maroon')) 
+
+console.log(fname.indexOf('a')) 
+
+console.log(fname.lastIndexOf('a')) 
+
+console.log(fname.split('a')) 
+
+console.log(fname.toUpperCase()) 
+
+console.log(fname.toLowerCase()) 
