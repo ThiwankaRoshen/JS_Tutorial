@@ -10,6 +10,10 @@ var shoppingitems = ['cap', 'lap', 'tap', 'map']
 console.log(shoppingitems[2])
 //array methods
 //to get length of an array = .length
+//to add a item to end of the array = .push(item)
+//to remove and get a item from end of the array = .pop()
+var enditem = shoppingitems.pop()
+console.log(enditem)
 //below example
 
 //i want to display my shopping list. make a function for it.
