@@ -10,7 +10,12 @@ function currencyConverter(currency, rate){
 
 currency2 = currencyConverter(currency1, rate)
 console.log(currency2)
-
+//default parameters : this makes easy for testing and some cases but still work like normal way
+function currencyConverterWithDefaultPara(currency = 1, rate = 1){
+    return currency*rate
+}
+console.log('With dafault parameters',currencyConverterWithDefaultPara())
+console.log('With dafault parameters',currencyConverterWithDefaultPara(120,2))
 //recursion: function calling itself
 //kind of way to loop
 for (var i = 1; i<=3; i++){
@@ -81,46 +86,3 @@ console.log(number(randomnum, specificnum))
  }
 
 
-//Object Oriented Programming: data and functions work in a combined way
-//we use this to make real life items
-var person1= {
-    name : 'thiwanka',
-    status: 'doing nothing',
-    walking: function(){
-        console.log('walking')
-        this.status = 'walking'
-    },
-    stopwalk: function(){
-        console.log('stopped walking')
-        this.status = 'doing nothing'
-    }
-}
-console.log(person1.name)
-console.log(person1.status) 
-person1.walking()
-console.log(person1.status)
-
-//above i made one object but if  i wanted 100 of those objects, wouldn't be that easy if i can get instantly
-//CLASSES : template of an object
-class Person{
-    //constructer: assign attributes(variables specific to class)
-    constructor(name, status){
-        this.name = name
-        this.status = status
-    }
-
-    //below are methods(function that specific to the class)
-    walking= function(){
-        console.log('walking')
-        this.status = 'walking'
-    }
-    stopwalk= function(){
-        console.log('stopped walking')
-        this.status = 'doing nothing'
-    }
-}
-var person2 = new Person('TRX', 'learning')
-console.log(person2.name)
-console.log(person2.status) 
-person2.walking()
-console.log(person2.status)
