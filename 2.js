@@ -14,6 +14,17 @@ console.log(variable_name)
 console.log('hey', variable_name)
 //2nd method
 console.log('hey' + variable_name)
+//3rd method(backticks ` not these ') - template
+console.log(`hey ${variable_name}`)
+//also in this third method there is a way to print multiline texts
+console.log(`
+    hey asdasd
+    asdasdasd
+    asdasdasd
+    asdasdasd
+`)
+
+
 //what was the difference between them?
 //also we can many words in this way not only two words.
 
