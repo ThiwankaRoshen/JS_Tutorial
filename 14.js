@@ -39,6 +39,8 @@ console.log(arr3)
 console.log(arr)
 
 //3.  anArray.map(a_function)
+//take each item and execute a_function and make an array
+//return an array
 var arr = [1,2,3,4]
 
 console.log(arr)
@@ -57,7 +59,21 @@ arr.map(function(item, index){
 console.log(arr2)
 console.log(arr3)
 console.log(arr)
-
+//4. ...anArray   - (spread operator)
+//use to spread
+console.log('spread the items ', ...arr)
+//also to merge many arrays
+var arr4 = [...arr, ...arr2, ...arr3]
+//5. rest operater- a way to destruct lists
+var [first, ...others] = arr
+console.log(`
+first ${first} 
+others ${others}`)
+//make a function to multiply by given factor every item give
+function multy(factor, ...numbers){
+    return numbers.map(function(item){ return item*factor})
+}
+console.log(multy(2,6,7,8,9,10))
 //objects: keys can be only strings
 var obj3 = {
     size : 40,
@@ -66,6 +82,10 @@ var obj3 = {
 Object.keys(obj3).filter(function(key){
     console.log(key, obj3[key])
 })
+//destruct an object
+var {size} = obj3
+console.log(size)
+
 //Map : keys can be any type
 let bestBoxers = new Map();
 bestBoxers.set(1, "The Champion");
