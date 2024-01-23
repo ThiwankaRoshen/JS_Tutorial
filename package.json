@@ -1,0 +1,25 @@
+{
+  "name": "js_tutorial",
+  "version": "1.0.0",
+  "description": "Here I make a tutorial for javascipt for anyone to learn from scratch. I will make some projects from the learning material and make this interesting to learn.",
+  "main": "1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiwankaRoshen/JS_Tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiwankaRoshen/JS_Tutorial/issues"
+  },
+  "homepage": "https://github.com/ThiwankaRoshen/JS_Tutorial#readme",
+  "dependencies": {
+    "lower-case": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
